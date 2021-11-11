@@ -8,8 +8,6 @@ N3             = require 'n3'
 Which          = require 'which'
 CommonContexts = require 'jsonld-common-contexts'
 
-# log = require('easylog')(module)
-
 ###
 
 Middleware for Express that handles Content-Negotiation and sends the

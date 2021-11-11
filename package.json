@@ -1,10 +1,9 @@
-{
-  "name": "jsonld-rapper",
+{ "name": "jsonld-rapper",
   "version": "0.2.5",
   "description": "Convert between RDF and JSON-LD using rapper",
   "scripts": {
     "test": "for s in test/*.coffee;do coffee $s;done",
-    "docs": "docker -i src -o apidocs -s -n -c vs",
+    "docs": "echo 'E: Documentation generation is temporarily disabled because of security vulnerabilities in dependencies of docker@^0.2.14. The command used was:' docker -i src -o apidocs -s -n -c vs",
     "compile": "coffee -c -o lib src",
     "clean": "rm -r apidocs lib ; true",
     "prepublish": "npm run compile"
@@ -30,7 +29,6 @@
   },
   "devDependencies": {
     "coffee-script": "^1.9.1",
-    "docker": "^0.2.14",
     "faucet": "0.0.1",
     "tape": "^4.0.0"
   },
